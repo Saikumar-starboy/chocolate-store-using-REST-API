@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <h1 class="h1 text-center m-3 p-3 bg-secondary ">Chocolate Store</h1>
+
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+    <form action="" onsubmit="save(event)">
+        <div class="form-group">
+            <label for="" class="form-label">Candy Name:</label>
+            <input type="text" class="form-control"  name="candyName" id="">
+        </div>
+        <div class="form-group">
+            <label for="" class="form-label">Description:</label>
+            <input type="text" class="form-control"  name="description" id="">
+        </div>
+        <div class="form-group">
+            <label for="" class="form-label">Price:</label>
+            <input type="number" class="form-control" name="price" id="">
+        </div>
+        <div class="form-group">
+            <label for="" class="form-label">Quantity:</label>
+            <input type="number" class="form-control"  name="quantity" id="">
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Add Item</button>
+    </form>
+    </div>
+    </div>
+
+<div class="row">
+    <div class="col-md-10 mx-auto">
+        <table class="table" id="candyTable">
+            <thead>
+                <tr>
+                    <th>Candy Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="store.js"></script>
+    
+
+</body>
+</html>
